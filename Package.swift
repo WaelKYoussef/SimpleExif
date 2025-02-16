@@ -6,7 +6,7 @@ let package = Package(
     name: "SimpleExif",
 
     platforms: [
-        .iOS(.v10) 
+        .iOS(.v10)
     ],
 
     products: [
@@ -18,6 +18,8 @@ let package = Package(
     targets: [
         .target(
             name: "SimpleExif",
-            dependencies: []),
+            dependencies: [],
+            path: "Classes")
     ]
+    
 )
