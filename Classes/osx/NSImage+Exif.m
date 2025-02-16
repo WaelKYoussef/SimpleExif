@@ -6,9 +6,11 @@
 //
 //
 
+#import <TargetConditionals.h>
+#if TARGET_OS_OSX
 #import <ImageIO/ImageIO.h>
 #import "NSImage+Exif.h"
-#import "ExifContainer.h"
+#import "../ExifContainer.h"
 
 @implementation NSImage (Exif)
 
@@ -45,3 +47,4 @@
 }
 
 @end
+#endif

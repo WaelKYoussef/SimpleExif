@@ -6,6 +6,7 @@
 //
 //
 
+#if TARGET_OS_IPHONE
 #import <UIKit/UIKit.h>
 
 @class ExifContainer;
@@ -15,3 +16,4 @@
 - (NSData *)addExif:(ExifContainer *)container;
 
 @end
+#endif
